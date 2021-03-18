@@ -1,0 +1,158 @@
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  margin-left: 30px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: Monaco, "Segoe UI";
+  cursor: pointer;
+}
+#container {
+  background-color: black;
+  font-family: Monaco, "Segoe UI";
+  width: 40%;
+  float: left;
+}
+#fetch {
+  margin-left: 30px;
+}
+#sort {
+  width: 100%;
+}
+.dropbtn {
+  background-color: #395dc0;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+label {
+  margin-left: 30px;
+}
+input {
+  margin-left: 30px;
+}
+h1 {
+  padding: 20px;
+  font-family: Monaco, "Segoe UI";
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 60px;
+  width: 40%;
+}
+#bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  font-family: Monaco, "Segoe UI";
+}
+#holder {
+  float: left;
+  margin-bottom: 80%;
+  position: absolute;
+  margin-left: 50%;
+  width: 300px;
+  color: black;
+}
+/* Add some content at the bottom of the video/page */
+#notbg {
+  position: absolute;
+  /*
+  background: rgba(0, 0, 0, 0.5);
+  */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.panel-body {
+  font-size: 20px;
+  height: 100px;
+  font-family: Monaco, "Segoe UI";
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #dd4242;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  font-family: Monaco, "Segoe UI";
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+#depaprt {
+  color: black;
+  font-family: Monaco, "Segoe UI";
+}
+
+#arraprt {
+  color: #000000;
+  font-family: Monaco, "Segoe UI";
+}
+#depdate {
+  color: black;
+  font-family: Monaco, "Segoe UI";
+}
+#arrdate {
+  color: black;
+  font-family: Monaco, "Segoe UI";
+}
+#curr {
+  color: black;
+  font-family: Monaco, "Segoe UI";
+}
+#depdatelabel {
+  width: 170px;
+  font-family: Monaco, "Segoe UI";
+}
+#arrdatelabel {
+  width: 170px;
+  font-family: Monaco, "Segoe UI";
+}
+#depaprtlabel {
+  width: 170px;
+  margin-top: 30px;
+  font-family: Monaco, "Segoe UI";
+}
+#arraprtlabel {
+  width: 170px;
+  font-family: Monaco, "Segoe UI";
+}
+#currlabel {
+  width: 170px;
+  font-family: Monaco, "Segoe UI";
+}

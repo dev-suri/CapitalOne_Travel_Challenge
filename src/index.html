@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SkyScanner</title>
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheet.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <!-- The video -->
+    <div id="bg">
+      <video autoplay muted loop id="backgroundvideo">
+        <source src="airplanebg1.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div id="notbg">
+      <h1 id="title">Cheap Flight Finder made by Dev Suri</h1>
+      <div id="container">
+        <label id="depaprtlabel" for="depaprt">Departure Airport:</label>
+        <input
+          type="text"
+          id="depaprt"
+          list="suggestions"
+          name="departure_airport"
+        /><br /><br />
+        <datalist id="suggestions">
+          <option value="ATL"> </option>
+          <option value="LAX"> </option>
+          <option value="ORD"> </option>
+          <option value="DFW"> </option>
+          <option value="DEN"> </option>
+          <option value="JFK"> </option>
+          <option value="SFO"> </option>
+          <option value="LAS"> </option>
+          <option value="SEA"> </option>
+          <option value="BOS"> </option>
+          <option value="MIA"> </option>
+          <option value="PHX"> </option>
+          <option value="IAD"> </option>
+          <option value="DCA"> </option>
+          <option value="CLT"> </option>
+          <option value="IAH"> </option>
+          <option value="SLC"> </option>
+          <option value="PDX"> </option>
+        </datalist>
+
+        <datalist id="suggestions_currency">
+          <option value="USD"> </option>
+          <option value="EUR"> </option>
+          <option value="GBP"> </option>
+          <option value="JPY"> </option>
+          <option value="RUB"> </option>
+          <option value="INR"> </option>
+          <option value="RUB"> </option>
+          <option value="CNY"> </option>
+        </datalist>
+
+        <label id="arraprtlabel" for="arraprt">Arrival Airport:</label>
+        <input
+          type="text"
+          id="arraprt"
+          list="suggestions"
+          name="entry_airport"
+        /><br /><br />
+        <label id="depdatelabel" for="depdate">Departure Date:</label>
+        <input type="date" id="depdate" />
+        <br /><br />
+        <label id="arrdatelabel" for="arrdate">Arrival Date: </label>
+        <input type="date" id="arrdate" />
+        <br /><br />
+        <label id="currlabel" for="curr">Currency (ex: USD): </label>
+        <input type="text" list="suggestions_currency" id="curr" />
+        <br /><br />
+        <button class="dropbtn" id="fetch" onclick="getFields()">
+          Get Prices
+        </button>
+        <div class="dropdown">
+          <button id="sort" onclick="showSortingOptions()" class="dropbtn">
+            Sort By
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a onclick="leastExpensive()" href="#">Least Expensive</a>
+            <a onclick="mostExpensive()" href="#">Most Expensive</a>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+      <div id="holder"></div>
+    </div>
+  </body>
+
+  <script src="myscript.js"></script>
+</html>
