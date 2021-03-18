@@ -1,4 +1,4 @@
-# CapitalOne_Travel_Challenge
+# CapitalOne Travel Challenge
 
 Please click the following link if you want to see the site live!
 
